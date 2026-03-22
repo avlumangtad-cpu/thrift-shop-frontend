@@ -43,6 +43,7 @@ const Home = () => {
 
   return (
     <div className="container">
+      {/* Banner */}
       <div id="bannerCarousel" className="carousel slide mb-4" data-bs-ride="carousel">
         <div className="carousel-inner">
           <div className="carousel-item active">
@@ -58,6 +59,7 @@ const Home = () => {
             <img src={banner4} className="d-block w-100" alt="Banner 4" />
           </div>
         </div>
+
         <button className="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
           <span className="carousel-control-prev-icon" aria-hidden="true"></span>
           <span className="visually-hidden">Previous</span>
@@ -68,6 +70,7 @@ const Home = () => {
         </button>
       </div>
 
+      {/* Featured Products + Button */}
       <div className="d-flex justify-content-between align-items-center mb-3">
         <h2>Featured Products</h2>
         <Link to="/products" className="btn btn-outline-primary">
