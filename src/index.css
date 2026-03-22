@@ -87,6 +87,7 @@ button:focus-visible {
   transform: scale(1.1);
 }
 
+/* ✅ FIXED: left: 10px (was: left: 10) */
 .sale-badge {
   position: absolute;
   top: 10px;

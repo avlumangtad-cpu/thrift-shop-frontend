@@ -17,6 +17,7 @@ const Cart = () => {
     <div className="container my-5">
       <h2 className="mb-4">🛒 Thrift Bag</h2>
 
+      {/* ✅ FIXED: && instead of & & */}
       {cart.length === 0 && (
         <div className="alert alert-info">Your cart is waiting for something special.</div>
       )}
@@ -59,6 +60,7 @@ const Cart = () => {
         </div>
       ))}
 
+      {/* ✅ FIXED: && instead of & & */}
       {cart.length > 0 && (
         <div className="card shadow mt-4">
           <div className="card-body d-flex flex-column flex-md-row justify-content-between align-items-center">

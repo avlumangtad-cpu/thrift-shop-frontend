@@ -51,6 +51,7 @@ export const CartProvider = ({ children }) => {
     });
   };
 
+  // ✅ FIXED: removeFromCart (was: remove FromCart)
   const removeFromCart = (id) => {
     setCart((prev) => prev.filter((item) => item.id !== id));
   };

@@ -1,15 +1,18 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import ProductCard from '../components/ProductCard';
-import banner1 from '../assets/banner1.jpg';
-import banner2 from '../assets/banner2.jpg';
-import banner3 from '../assets/banner3.jpg';
-import banner4 from '../assets/banner4.jpg';
+
+// ✅ FIXED: Use public folder paths instead of imports
+const banner1 = "/assets/banner1.jpg";
+const banner2 = "/assets/banner2.jpg";
+const banner3 = "/assets/banner3.jpg";
+const banner4 = "/assets/banner4.jpg";
 
 const Home = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  // ✅ FIXED: Use environment variable for API URL
   const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
 
   useEffect(() => {
