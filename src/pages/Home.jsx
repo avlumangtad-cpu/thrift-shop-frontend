@@ -2,8 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import ProductCard from '../components/ProductCard';
 
-// ✅ FIXED: Use public folder paths instead of imports
-const banner1 = "/assets/banner1.jpg";
+const banner1 = "/assets/Banner1.jpg";
 const banner2 = "/assets/banner2.jpg";
 const banner3 = "/assets/banner3.jpg";
 const banner4 = "/assets/banner4.jpg";
